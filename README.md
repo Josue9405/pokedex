@@ -25,5 +25,5 @@ Componentes:
 
 El sitio cuenta con funciones responsivas para adaptarse al disposivito desde el cual lo visualizan. Ajustando los elementos en pantalla y reordenando para que su uso en teléfonos sea posible.
 <div align="center">
-    <img src="static/img/responsivo.png" alt="Responsivo" width="300">
+    <img src="static/img/responsivo.png" alt="Responsivo" width="500">
 </div>
