@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PokéDex</title>
+    <link rel="icon" type="image/x-icon" href="static/img/pokeball.png">
     <link href="static/css/pokedex.css" rel="stylesheet">
     <script src="static/js/pokedex.js"></script>
 </head>
 
 <body>
-    <section class="pokedex">
-        <input id="pokemonFind" placeholder="Ingresa el Pokémon">
-        <button id="findPokemon" onclick="findPokemon(document.getElementById('pokemonFind').value)">Buscar</button>
+    <section class="find-section">
+        <input id="pokemonFind" class="find-box" placeholder="Ingresa el Pokémon">
+        <button id="findPokemon" class="rounded-button" onclick="findPokemon(document.getElementById('pokemonFind').value)">Buscar</button>
     </section>
-
+    <div class="notificacion">
+        Debes rotar tu télefono
+    </div>
     <div id="pokedex" class="pokedex">
         <div id="left" class="left-side">
             <div id="logo"></div>
             <div id="bg_curve1_left"></div>
             <div id="bg_curve2_left"></div>
-            <div id="curve1_left">
+            <div id="curve1_left" class="curve1_left">
                 <div id="buttonGlass">
                     <div id="reflect"> </div>
                 </div>
@@ -28,7 +31,7 @@
                 <div id="miniButtonGlass2"></div>
                 <div id="miniButtonGlass3"></div>
             </div>
-            <div id="curve2_left">
+            <div id="curve2_left" class="curve2_left">
                 <div id="junction">
                     <div id="junction1"></div>
                     <div id="junction2"></div>
@@ -40,8 +43,8 @@
                     <div id="buttontopPicture2"></div>
                 </div>
                 <div id="picture">
-                    <img id="pokemonSprite" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/200653/psykokwak.gif"
-                        alt="psykokwak" height="170" />
+                    <img id="pokemonSprite" src="static/img/pokeball.png"
+                        alt="pokeball" height="170" />
                 </div>
                 <div id="buttonbottomPicture"></div>
                 <div id="speakers">
@@ -100,7 +103,7 @@
                         <th>SP.D</th>
                         <th>SPD</th>
                     </tr>
-                    <tr id="pokemonStats" style="height: 100px;">
+                    <tr id="pokemonStats" style="height: 120px;">
                     </tr>
                 </table>
             </div>
